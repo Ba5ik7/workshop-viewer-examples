@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'tmdjr-solution-one',
-  templateUrl: './solution-one.component.html',
-  styleUrls: ['./solution-one.component.css']
+  templateUrl: './solution-one-example.html',
+  styleUrls: ['./solution-one-example.css']
 })
-export class SolutionOneComponent implements OnInit {
+export class SolutionOneExample implements OnInit {
 
   constructor() { }
 
