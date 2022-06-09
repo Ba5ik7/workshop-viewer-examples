@@ -35,6 +35,23 @@ export interface NgModuleInfo {
 }
 
 export const EXAMPLE_COMPONENTS: {[id: string]: LiveExample} = {
+  "feature-a": {
+    "packagePath": "lib/feature-a/feature-a",
+    "title": "Feature A",
+    "componentName": "FeatureAExample",
+    "files": [
+      "feature-a-example.ts",
+      "./feature-a-example.html",
+      "./feature-a-example.css"
+    ],
+    "selector": "tmdjr-feature-a",
+    "additionalComponents": [],
+    "primaryFile": "feature-a-example.ts",
+    "module": {
+      "name": "FeatureAModule",
+      "importSpecifier": "lib/feature-a"
+    }
+  },
   "solution-one": {
     "packagePath": "lib/route-reuse-strategy/parent-child-design/solution-one",
     "title": "RouteReuseStrategy - Parent Child Design - Solution One",

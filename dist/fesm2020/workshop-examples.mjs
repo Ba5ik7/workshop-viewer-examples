@@ -72,14 +72,17 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImpor
                 }]
         }] });
 
-class FeatureAComponent {
+/**
+ * @title Feature A
+ */
+class FeatureAExample {
     constructor() { }
     ngOnInit() {
     }
 }
-FeatureAComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: FeatureAComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
-FeatureAComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.0.1", type: FeatureAComponent, selector: "tmdjr-feature-a", ngImport: i0, template: "<p>feature-a works!</p>\n", styles: [""] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: FeatureAComponent, decorators: [{
+FeatureAExample.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: FeatureAExample, deps: [], target: i0.ɵɵFactoryTarget.Component });
+FeatureAExample.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.0.1", type: FeatureAExample, selector: "tmdjr-feature-a", ngImport: i0, template: "<p>feature-a works!</p>\n", styles: [""] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: FeatureAExample, decorators: [{
             type: Component,
             args: [{ selector: 'tmdjr-feature-a', template: "<p>feature-a works!</p>\n" }]
         }], ctorParameters: function () { return []; } });
@@ -87,16 +90,19 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImpor
 class FeatureAModule {
 }
 FeatureAModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: FeatureAModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
-FeatureAModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "14.0.1", ngImport: i0, type: FeatureAModule, declarations: [FeatureAComponent], imports: [CommonModule] });
+FeatureAModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "14.0.1", ngImport: i0, type: FeatureAModule, declarations: [FeatureAExample], imports: [CommonModule], exports: [FeatureAExample] });
 FeatureAModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: FeatureAModule, imports: [CommonModule] });
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: FeatureAModule, decorators: [{
             type: NgModule,
             args: [{
                     declarations: [
-                        FeatureAComponent
+                        FeatureAExample
                     ],
                     imports: [
                         CommonModule
+                    ],
+                    exports: [
+                        FeatureAExample
                     ]
                 }]
         }] });
@@ -136,6 +142,23 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImpor
  ******************************************************************************
  */
 const EXAMPLE_COMPONENTS = {
+    "feature-a": {
+        "packagePath": "lib/feature-a/feature-a",
+        "title": "Feature A",
+        "componentName": "FeatureAExample",
+        "files": [
+            "feature-a-example.ts",
+            "./feature-a-example.html",
+            "./feature-a-example.css"
+        ],
+        "selector": "tmdjr-feature-a",
+        "additionalComponents": [],
+        "primaryFile": "feature-a-example.ts",
+        "module": {
+            "name": "FeatureAModule",
+            "importSpecifier": "lib/feature-a"
+        }
+    },
     "solution-one": {
         "packagePath": "lib/route-reuse-strategy/parent-child-design/solution-one",
         "title": "RouteReuseStrategy - Parent Child Design - Solution One",
@@ -193,5 +216,5 @@ const EXAMPLE_COMPONENTS = {
  * Generated bundle index. Do not edit.
  */
 
-export { EXAMPLE_COMPONENTS, FeatureAComponent, FeatureAModule, FeatureBComponent, FeatureBModule, ParentChildDesignModule, SolutionOneExample, SolutionThreeExample, SolutionTwoExample };
+export { EXAMPLE_COMPONENTS, FeatureAExample, FeatureAModule, FeatureBComponent, FeatureBModule, ParentChildDesignModule, SolutionOneExample, SolutionThreeExample, SolutionTwoExample };
 //# sourceMappingURL=workshop-examples.mjs.map
