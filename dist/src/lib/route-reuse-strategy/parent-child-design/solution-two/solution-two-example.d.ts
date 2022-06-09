@@ -7,5 +7,5 @@ export declare class SolutionTwoExample implements OnInit {
     constructor();
     ngOnInit(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<SolutionTwoExample, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<SolutionTwoExample, "tmdjr-solution-two", never, {}, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<SolutionTwoExample, "tmdjr-solution-two", never, {}, {}, never, never, false>;
 }
