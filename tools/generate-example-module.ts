@@ -124,7 +124,7 @@ function analyzeExamples(sourceFiles: string[], baseDir: string): AnalyzedExampl
 
       // For consistency, we expect the example component selector to match
       // the id of the example.
-      const expectedSelector = `lib-${exampleId}`;
+      const expectedSelector = `tmdjr-${exampleId}`;
       if (primaryComponent.selector !== expectedSelector) {
         throw Error(
           `Example ${exampleId} uses selector: ${primaryComponent.selector}, ` +
@@ -233,4 +233,4 @@ function fromDir(startPath: string, filter: string) {
 };
 
 fromDir('./projects/workshop-examples/src/lib', '.ts');
-generateExampleModule(sourceFiles, './projects/workshop-live-examples/src/example-module.ts');
+generateExampleModule(sourceFiles, './projects/workshop-examples/src/example-module.ts');

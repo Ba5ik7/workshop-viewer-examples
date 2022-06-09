@@ -81,7 +81,7 @@ function analyzeExamples(sourceFiles, baseDir) {
             };
             // For consistency, we expect the example component selector to match
             // the id of the example.
-            var expectedSelector = "lib-".concat(exampleId);
+            var expectedSelector = "tmdjr-".concat(exampleId);
             if (primaryComponent.selector !== expectedSelector) {
                 throw Error("Example ".concat(exampleId, " uses selector: ").concat(primaryComponent.selector, ", ") +
                     "but expected: ".concat(expectedSelector));
@@ -179,4 +179,4 @@ function fromDir(startPath, filter) {
 }
 ;
 fromDir('./projects/workshop-examples/src/lib', '.ts');
-generateExampleModule(sourceFiles, './projects/workshop-live-examples/src/example-module.ts');
+generateExampleModule(sourceFiles, './projects/workshop-examples/src/example-module.ts');

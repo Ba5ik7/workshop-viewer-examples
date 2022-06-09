@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+/**
+ * @title RouteReuseStrategy - Parent Child Design - Solution One
+ */
 @Component({
   selector: 'tmdjr-solution-one',
   templateUrl: './solution-one-example.html',
