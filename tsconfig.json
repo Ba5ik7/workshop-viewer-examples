@@ -21,7 +21,17 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@tmdjr/workshop-examples/*": [
+        "projects/workshop-examples/*",
+        "projects/workshop-examples"
+      ],
+      "@tmdjr/workshop-examples": [
+        "dist/workshop-examples/*",
+        "dist/workshop-examples"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

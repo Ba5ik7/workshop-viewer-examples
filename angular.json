@@ -1,7 +1,42 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "105ce17c-0fb6-4701-a568-05c04c09a3c6"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "workshop-examples": {
+      "projectType": "library",
+      "root": "projects/workshop-examples",
+      "sourceRoot": "projects/workshop-examples/src",
+      "prefix": "tmdjr",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/workshop-examples/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/workshop-examples/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/workshop-examples/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/workshop-examples/src/test.ts",
+            "tsConfig": "projects/workshop-examples/tsconfig.spec.json",
+            "karmaConfig": "projects/workshop-examples/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "workshop-examples"
 }
