@@ -26,6 +26,14 @@
       "node": "./fesm2015/workshop-examples.mjs",
       "default": "./fesm2020/workshop-examples.mjs"
     },
+    "./src/lib/feature-a": {
+      "types": "./src/lib/feature-a/index.d.ts",
+      "esm2020": "./esm2020/src/lib/feature-a/workshop-examples-src-lib-feature-a.mjs",
+      "es2020": "./fesm2020/workshop-examples-src-lib-feature-a.mjs",
+      "es2015": "./fesm2015/workshop-examples-src-lib-feature-a.mjs",
+      "node": "./fesm2015/workshop-examples-src-lib-feature-a.mjs",
+      "default": "./fesm2020/workshop-examples-src-lib-feature-a.mjs"
+    },
     "./src/lib/route-reuse-strategy/parent-child-design": {
       "types": "./src/lib/route-reuse-strategy/parent-child-design/index.d.ts",
       "esm2020": "./esm2020/src/lib/route-reuse-strategy/parent-child-design/workshop-examples-src-lib-route-reuse-strategy-parent-child-design.mjs",
@@ -33,6 +41,14 @@
       "es2015": "./fesm2015/workshop-examples-src-lib-route-reuse-strategy-parent-child-design.mjs",
       "node": "./fesm2015/workshop-examples-src-lib-route-reuse-strategy-parent-child-design.mjs",
       "default": "./fesm2020/workshop-examples-src-lib-route-reuse-strategy-parent-child-design.mjs"
+    },
+    "./src/lib/sub/feature-b": {
+      "types": "./src/lib/sub/feature-b/index.d.ts",
+      "esm2020": "./esm2020/src/lib/sub/feature-b/workshop-examples-src-lib-sub-feature-b.mjs",
+      "es2020": "./fesm2020/workshop-examples-src-lib-sub-feature-b.mjs",
+      "es2015": "./fesm2015/workshop-examples-src-lib-sub-feature-b.mjs",
+      "node": "./fesm2015/workshop-examples-src-lib-sub-feature-b.mjs",
+      "default": "./fesm2020/workshop-examples-src-lib-sub-feature-b.mjs"
     }
   },
   "sideEffects": false
