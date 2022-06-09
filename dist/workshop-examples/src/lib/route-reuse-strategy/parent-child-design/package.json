@@ -1,0 +1,10 @@
+{
+  "module": "../../../../fesm2015/workshop-examples-src-lib-route-reuse-strategy-parent-child-design.mjs",
+  "es2020": "../../../../fesm2020/workshop-examples-src-lib-route-reuse-strategy-parent-child-design.mjs",
+  "esm2020": "../../../../esm2020/src/lib/route-reuse-strategy/parent-child-design/workshop-examples-src-lib-route-reuse-strategy-parent-child-design.mjs",
+  "fesm2020": "../../../../fesm2020/workshop-examples-src-lib-route-reuse-strategy-parent-child-design.mjs",
+  "fesm2015": "../../../../fesm2015/workshop-examples-src-lib-route-reuse-strategy-parent-child-design.mjs",
+  "typings": "workshop-examples-src-lib-route-reuse-strategy-parent-child-design.d.ts",
+  "sideEffects": false,
+  "name": "workshop-examples/src/lib/route-reuse-strategy/parent-child-design"
+}

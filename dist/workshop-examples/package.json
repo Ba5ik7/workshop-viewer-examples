@@ -1,0 +1,39 @@
+{
+  "name": "workshop-examples",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^13.3.0",
+    "@angular/core": "^13.3.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "module": "fesm2015/workshop-examples.mjs",
+  "es2020": "fesm2020/workshop-examples.mjs",
+  "esm2020": "esm2020/workshop-examples.mjs",
+  "fesm2020": "fesm2020/workshop-examples.mjs",
+  "fesm2015": "fesm2015/workshop-examples.mjs",
+  "typings": "workshop-examples.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./workshop-examples.d.ts",
+      "esm2020": "./esm2020/workshop-examples.mjs",
+      "es2020": "./fesm2020/workshop-examples.mjs",
+      "es2015": "./fesm2015/workshop-examples.mjs",
+      "node": "./fesm2015/workshop-examples.mjs",
+      "default": "./fesm2020/workshop-examples.mjs"
+    },
+    "./src/lib/route-reuse-strategy/parent-child-design": {
+      "types": "./src/lib/route-reuse-strategy/parent-child-design/workshop-examples-src-lib-route-reuse-strategy-parent-child-design.d.ts",
+      "esm2020": "./esm2020/src/lib/route-reuse-strategy/parent-child-design/workshop-examples-src-lib-route-reuse-strategy-parent-child-design.mjs",
+      "es2020": "./fesm2020/workshop-examples-src-lib-route-reuse-strategy-parent-child-design.mjs",
+      "es2015": "./fesm2015/workshop-examples-src-lib-route-reuse-strategy-parent-child-design.mjs",
+      "node": "./fesm2015/workshop-examples-src-lib-route-reuse-strategy-parent-child-design.mjs",
+      "default": "./fesm2020/workshop-examples-src-lib-route-reuse-strategy-parent-child-design.mjs"
+    }
+  },
+  "sideEffects": false
+}
