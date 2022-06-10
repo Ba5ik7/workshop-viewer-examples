@@ -9,3 +9,4 @@ export declare class SolutionOneExample implements OnInit {
     static ɵfac: i0.ɵɵFactoryDeclaration<SolutionOneExample, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<SolutionOneExample, "tmdjr-solution-one", never, {}, {}, never, never, false>;
 }
+//# sourceMappingURL=solution-one-example.d.ts.map

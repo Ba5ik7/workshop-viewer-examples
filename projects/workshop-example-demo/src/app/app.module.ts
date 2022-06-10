@@ -5,7 +5,10 @@ import { MatButtonModule } from '@angular/material/button'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ParentChildDesignModule } from 'dist';
+
+import { CdkTreeModule } from '@angular/cdk/tree';
+
+import { ParentChildDesignModule } from '@tmdjr/workshop-examples/src/lib/route-reuse-strategy/parent-child-design';
 
 @NgModule({
   declarations: [
@@ -14,8 +17,8 @@ import { ParentChildDesignModule } from 'dist';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatButtonModule,
-    ParentChildDesignModule
+    ParentChildDesignModule,
+    CdkTreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

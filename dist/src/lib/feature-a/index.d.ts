@@ -7,3 +7,4 @@ export declare class FeatureAModule {
     static ɵmod: i0.ɵɵNgModuleDeclaration<FeatureAModule, [typeof i1.FeatureAExample], [typeof i2.CommonModule], [typeof i1.FeatureAExample]>;
     static ɵinj: i0.ɵɵInjectorDeclaration<FeatureAModule>;
 }
+//# sourceMappingURL=index.d.ts.map

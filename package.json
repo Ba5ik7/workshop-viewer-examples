@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "node ./tools/generate-example-module.js && ng build",
-    "watch": "ng build --watch --configuration development",
+    "start": "ng serve workshop-example-demo",
+    "build": "node ./tools/generate-example-module.js && ng build workshop-examples",
+    "watch": "ng build workshop-examples --watch --configuration development",
     "test": "ng test"
   },
   "private": true,
