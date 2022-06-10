@@ -1,1 +1,8 @@
-<ul><li *ngFor="let component of exampleComponents | keyvalue">{{component.value.module.name}} - {{component.key}}</li></ul>
+<ul>
+  <li *ngFor="let component of exampleComponents | keyvalue">
+    <a [routerLink]="['/example-viewer', component.key]">
+      {{component.value.module.name}} - {{component.key}}
+    </a>
+  </li>
+</ul>
+<router-outlet></router-outlet>
