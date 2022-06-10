@@ -8,13 +8,10 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "module": "fesm2015/workshop-examples.mjs",
-  "es2020": "fesm2020/workshop-examples.mjs",
-  "esm2020": "esm2020/workshop-examples.mjs",
-  "fesm2020": "fesm2020/workshop-examples.mjs",
-  "fesm2015": "fesm2015/workshop-examples.mjs",
-  "typings": "index.d.ts",
   "exports": {
+    "./esm2020": {
+      "default": "./esm2020"
+    },
     "./package.json": {
       "default": "./package.json"
     },
@@ -41,15 +38,13 @@
       "es2015": "./fesm2015/workshop-examples-src-lib-route-reuse-strategy-parent-child-design.mjs",
       "node": "./fesm2015/workshop-examples-src-lib-route-reuse-strategy-parent-child-design.mjs",
       "default": "./fesm2020/workshop-examples-src-lib-route-reuse-strategy-parent-child-design.mjs"
-    },
-    "./src/lib/sub/feature-b": {
-      "types": "./src/lib/sub/feature-b/index.d.ts",
-      "esm2020": "./esm2020/src/lib/sub/feature-b/workshop-examples-src-lib-sub-feature-b.mjs",
-      "es2020": "./fesm2020/workshop-examples-src-lib-sub-feature-b.mjs",
-      "es2015": "./fesm2015/workshop-examples-src-lib-sub-feature-b.mjs",
-      "node": "./fesm2015/workshop-examples-src-lib-sub-feature-b.mjs",
-      "default": "./fesm2020/workshop-examples-src-lib-sub-feature-b.mjs"
     }
   },
+  "module": "fesm2015/workshop-examples.mjs",
+  "es2020": "fesm2020/workshop-examples.mjs",
+  "esm2020": "esm2020/workshop-examples.mjs",
+  "fesm2020": "fesm2020/workshop-examples.mjs",
+  "fesm2015": "fesm2015/workshop-examples.mjs",
+  "typings": "index.d.ts",
   "sideEffects": false
 }
