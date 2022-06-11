@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ExampleViewerComponent } from './example-viewer.component';
 
 const routes: Routes = [
   {
-    path: 'example-viewer',
-    loadChildren: () => import('./pages/example-viewer/example-viewer.module').then(m => m.ExampleViewerModule)
+    path: '/:section',
+    component: ExampleViewerComponent
   }
 ];
 
@@ -12,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class ExampleViewerRoutingModule { }

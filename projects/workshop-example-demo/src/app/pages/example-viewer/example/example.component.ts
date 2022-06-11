@@ -71,7 +71,7 @@ export class ExampleComponent {
       // module.importSpecifier = 'src/lib/feature-a';
       const moduleExports: any = await import(
         /* webpackExclude: /\.map$/ */
-      '@tmdjr/workshop-examples/esm2020/' + module.importSpecifier);
+      'dist/esm2020/' + module.importSpecifier);
 
       // componentName = AutocompleteSimpleExample
       this.exampleComponentType = moduleExports[componentName];
