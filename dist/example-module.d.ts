@@ -34,4 +34,3 @@ export interface NgModuleInfo {
 export declare const EXAMPLE_COMPONENTS: {
     [id: string]: LiveExample;
 };
-//# sourceMappingURL=example-module.d.ts.map

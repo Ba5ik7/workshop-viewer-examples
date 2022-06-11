@@ -9,4 +9,3 @@ export declare class SolutionOneExample extends AbstractMasterComponent {
     static ɵfac: i0.ɵɵFactoryDeclaration<SolutionOneExample, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<SolutionOneExample, "tmdjr-solution-one", never, {}, {}, never, never, false>;
 }
-//# sourceMappingURL=solution-one-example.d.ts.map

@@ -2,6 +2,8 @@ import * as i1 from '@angular/common';
 import { CommonModule } from '@angular/common';
 import * as i0 from '@angular/core';
 import { Component, NgModule } from '@angular/core';
+import * as i1$1 from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 class AbstractMasterComponent {
     ngOnInit() {
@@ -21,24 +23,13 @@ class AbstractMasterComponent {
         console.log(`OnDestroy ${this.displayName} Parent`);
     }
 }
-AbstractMasterComponent.ɵfac = function AbstractMasterComponent_Factory(t) { return new (t || AbstractMasterComponent)(); };
-AbstractMasterComponent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: AbstractMasterComponent, selectors: [["ng-component"]], decls: 0, vars: 0, template: function AbstractMasterComponent_Template(rf, ctx) { }, encapsulation: 2 });
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(AbstractMasterComponent, [{
-        type: Component,
-        args: [{ template: '' }]
-    }], null, null); })();
+AbstractMasterComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: AbstractMasterComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+AbstractMasterComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.0.1", type: AbstractMasterComponent, selector: "ng-component", ngImport: i0, template: '', isInline: true });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: AbstractMasterComponent, decorators: [{
+            type: Component,
+            args: [{ template: '' }]
+        }] });
 
-function SolutionOneExample_ng_container_6_Template(rf, ctx) { if (rf & 1) {
-    i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelementStart(1, "div", 3);
-    i0.ɵɵtext(2);
-    i0.ɵɵelementEnd();
-    i0.ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const random_r1 = ctx.$implicit;
-    i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate1("Go to ", random_r1, "");
-} }
 /**
  * @title RouteReuseStrategy - Parent Child Design - Solution One
  */
@@ -48,26 +39,12 @@ class SolutionOneExample extends AbstractMasterComponent {
         this.displayName = 'Solution One';
     }
 }
-SolutionOneExample.ɵfac = function SolutionOneExample_Factory(t) { return new (t || SolutionOneExample)(); };
-SolutionOneExample.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: SolutionOneExample, selectors: [["tmdjr-solution-one"]], features: [i0.ɵɵInheritDefinitionFeature], decls: 7, vars: 2, consts: [[1, "solution-parent"], [1, "nav"], [4, "ngFor", "ngForOf"], [1, "nav-item"]], template: function SolutionOneExample_Template(rf, ctx) { if (rf & 1) {
-        i0.ɵɵelementStart(0, "div", 0)(1, "h2");
-        i0.ɵɵtext(2);
-        i0.ɵɵelementStart(3, "i");
-        i0.ɵɵtext(4, "Parent");
-        i0.ɵɵelementEnd()();
-        i0.ɵɵelementStart(5, "div", 1);
-        i0.ɵɵtemplate(6, SolutionOneExample_ng_container_6_Template, 3, 1, "ng-container", 2);
-        i0.ɵɵelementEnd()();
-    } if (rf & 2) {
-        i0.ɵɵadvance(2);
-        i0.ɵɵtextInterpolate1("", ctx.displayName, ": ");
-        i0.ɵɵadvance(4);
-        i0.ɵɵproperty("ngForOf", ctx.randoms);
-    } }, dependencies: [i1.NgForOf], styles: [".solution-parent[_ngcontent-%COMP%]{display:block;border:1px solid #066e98;padding:10px;margin-bottom:10px}.solution-parent[_ngcontent-%COMP%]   .nav[_ngcontent-%COMP%]{display:flex;flex-direction:row;gap:10px;margin-bottom:10px}.solution-parent[_ngcontent-%COMP%]   .nav[_ngcontent-%COMP%]   .nav-item[_ngcontent-%COMP%]{background-color:#000;color:#fff;padding:5px 10px;cursor:pointer}"] });
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(SolutionOneExample, [{
-        type: Component,
-        args: [{ selector: 'tmdjr-solution-one', template: "<div class=\"solution-parent\">\n  <h2>{{displayName}}: <i>Parent</i></h2>\n  <div class=\"nav\"> \n     <ng-container *ngFor=\"let random of randoms\"> \n        <!-- <div class=\"nav-item\" [routerLink]=\"['detail', displayName, random]\">Go to {{random}}</div> -->\n        <div class=\"nav-item\">Go to {{random}}</div>\n     </ng-container> \n  </div>\n  \n  <!-- <router-outlet></router-outlet> -->\n</div>", styles: [".solution-parent{display:block;border:1px solid #066e98;padding:10px;margin-bottom:10px}.solution-parent .nav{display:flex;flex-direction:row;gap:10px;margin-bottom:10px}.solution-parent .nav .nav-item{background-color:#000;color:#fff;padding:5px 10px;cursor:pointer}\n"] }]
-    }], function () { return []; }, null); })();
+SolutionOneExample.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionOneExample, deps: [], target: i0.ɵɵFactoryTarget.Component });
+SolutionOneExample.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.0.1", type: SolutionOneExample, selector: "tmdjr-solution-one", usesInheritance: true, ngImport: i0, template: "<div class=\"solution-parent\">\n  <h2>{{displayName}}: <i>Parent</i></h2>\n  <div class=\"nav\"> \n     <ng-container *ngFor=\"let random of randoms\"> \n        <div class=\"nav-item\" [routerLink]=\"['/parent', { outlets: { 'parent-child-design-details-outlet': [ displayName, random] } }]\">\n          Go to {{random}}\n        </div>\n     </ng-container> \n  </div>\n  \n  <router-outlet name=\"parent-child-design-details-outlet\"></router-outlet>\n</div>", styles: [".solution-parent{display:block;border:1px solid #066e98;padding:10px;margin-bottom:10px}.solution-parent .nav{display:flex;flex-direction:row;gap:10px;margin-bottom:10px}.solution-parent .nav .nav-item{background-color:#000;color:#fff;padding:5px 10px;cursor:pointer}\n"], dependencies: [{ kind: "directive", type: i1.NgForOf, selector: "[ngFor][ngForOf]", inputs: ["ngForOf", "ngForTrackBy", "ngForTemplate"] }, { kind: "directive", type: i1$1.RouterOutlet, selector: "router-outlet", outputs: ["activate", "deactivate", "attach", "detach"], exportAs: ["outlet"] }, { kind: "directive", type: i1$1.RouterLink, selector: ":not(a):not(area)[routerLink]", inputs: ["queryParams", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", "relativeTo", "routerLink"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionOneExample, decorators: [{
+            type: Component,
+            args: [{ selector: 'tmdjr-solution-one', template: "<div class=\"solution-parent\">\n  <h2>{{displayName}}: <i>Parent</i></h2>\n  <div class=\"nav\"> \n     <ng-container *ngFor=\"let random of randoms\"> \n        <div class=\"nav-item\" [routerLink]=\"['/parent', { outlets: { 'parent-child-design-details-outlet': [ displayName, random] } }]\">\n          Go to {{random}}\n        </div>\n     </ng-container> \n  </div>\n  \n  <router-outlet name=\"parent-child-design-details-outlet\"></router-outlet>\n</div>", styles: [".solution-parent{display:block;border:1px solid #066e98;padding:10px;margin-bottom:10px}.solution-parent .nav{display:flex;flex-direction:row;gap:10px;margin-bottom:10px}.solution-parent .nav .nav-item{background-color:#000;color:#fff;padding:5px 10px;cursor:pointer}\n"] }]
+        }], ctorParameters: function () { return []; } });
 
 /**
  * @title RouteReuseStrategy - Parent Child Design - Solution Two
@@ -77,16 +54,12 @@ class SolutionTwoExample {
     ngOnInit() {
     }
 }
-SolutionTwoExample.ɵfac = function SolutionTwoExample_Factory(t) { return new (t || SolutionTwoExample)(); };
-SolutionTwoExample.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: SolutionTwoExample, selectors: [["tmdjr-solution-two"]], decls: 2, vars: 0, template: function SolutionTwoExample_Template(rf, ctx) { if (rf & 1) {
-        i0.ɵɵelementStart(0, "p");
-        i0.ɵɵtext(1, "solution-two works!");
-        i0.ɵɵelementEnd();
-    } } });
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(SolutionTwoExample, [{
-        type: Component,
-        args: [{ selector: 'tmdjr-solution-two', template: "<p>solution-two works!</p>\n" }]
-    }], function () { return []; }, null); })();
+SolutionTwoExample.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionTwoExample, deps: [], target: i0.ɵɵFactoryTarget.Component });
+SolutionTwoExample.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.0.1", type: SolutionTwoExample, selector: "tmdjr-solution-two", ngImport: i0, template: "<p>solution-two works!</p>\n", styles: [""] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionTwoExample, decorators: [{
+            type: Component,
+            args: [{ selector: 'tmdjr-solution-two', template: "<p>solution-two works!</p>\n" }]
+        }], ctorParameters: function () { return []; } });
 
 /**
  * @title RouteReuseStrategy - Parent Child Design - Solution Three
@@ -96,16 +69,62 @@ class SolutionThreeExample {
     ngOnInit() {
     }
 }
-SolutionThreeExample.ɵfac = function SolutionThreeExample_Factory(t) { return new (t || SolutionThreeExample)(); };
-SolutionThreeExample.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: SolutionThreeExample, selectors: [["tmdjr-solution-three"]], decls: 2, vars: 0, template: function SolutionThreeExample_Template(rf, ctx) { if (rf & 1) {
-        i0.ɵɵelementStart(0, "p");
-        i0.ɵɵtext(1, "solution-three works!");
-        i0.ɵɵelementEnd();
-    } } });
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(SolutionThreeExample, [{
-        type: Component,
-        args: [{ selector: 'tmdjr-solution-three', template: "<p>solution-three works!</p>\n" }]
-    }], function () { return []; }, null); })();
+SolutionThreeExample.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionThreeExample, deps: [], target: i0.ɵɵFactoryTarget.Component });
+SolutionThreeExample.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.0.1", type: SolutionThreeExample, selector: "tmdjr-solution-three", ngImport: i0, template: "<p>solution-three works!</p>\n", styles: [""] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionThreeExample, decorators: [{
+            type: Component,
+            args: [{ selector: 'tmdjr-solution-three', template: "<p>solution-three works!</p>\n" }]
+        }], ctorParameters: function () { return []; } });
+
+class DetailsComponent {
+    constructor(route) {
+        this.route = route;
+    }
+    ngOnInit() {
+        this.route.params.subscribe(p => {
+            this.routeId = p['detailId'];
+            this.displayName = p['displayName'];
+        });
+        this.randomVal = Math.floor(Math.random() * 100);
+        console.log(`OnInit ${this.displayName} Detail: ${this.routeId}`);
+    }
+    ngOnDestroy() {
+        console.log(`OnDestroy ${this.displayName} Detail: ${this.routeId}`);
+    }
+}
+DetailsComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: DetailsComponent, deps: [{ token: i1$1.ActivatedRoute }], target: i0.ɵɵFactoryTarget.Component });
+DetailsComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.0.1", type: DetailsComponent, selector: "shared-details", ngImport: i0, template: "<h2>{{displayName}}: <i>Details</i></h2>\n<div><b>Detail ID:</b> {{routeId}}</div> \n<div><b>Random value:</b> {{randomVal}}</div>\n", styles: [":host{display:block;border:1px solid #066E98;padding:10px}\n"] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: DetailsComponent, decorators: [{
+            type: Component,
+            args: [{ selector: 'shared-details', template: "<h2>{{displayName}}: <i>Details</i></h2>\n<div><b>Detail ID:</b> {{routeId}}</div> \n<div><b>Random value:</b> {{randomVal}}</div>\n", styles: [":host{display:block;border:1px solid #066E98;padding:10px}\n"] }]
+        }], ctorParameters: function () { return [{ type: i1$1.ActivatedRoute }]; } });
+
+const routes = [
+    {
+        path: 'parent',
+        component: SolutionOneExample,
+        children: [
+            {
+                path: ':displayName/:detailId',
+                component: DetailsComponent,
+                outlet: 'parent-child-design-details-outlet',
+                data: { alwaysRefresh: true }
+            }
+        ]
+    }
+];
+class SolutionOneRoutingModule {
+}
+SolutionOneRoutingModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionOneRoutingModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
+SolutionOneRoutingModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "14.0.1", ngImport: i0, type: SolutionOneRoutingModule, imports: [i1$1.RouterModule], exports: [RouterModule] });
+SolutionOneRoutingModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionOneRoutingModule, imports: [RouterModule.forChild(routes), RouterModule] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionOneRoutingModule, decorators: [{
+            type: NgModule,
+            args: [{
+                    imports: [RouterModule.forChild(routes)],
+                    exports: [RouterModule]
+                }]
+        }] });
 
 const EXAMPLES = [
     SolutionOneExample,
@@ -114,24 +133,26 @@ const EXAMPLES = [
 ];
 class ParentChildDesignModule {
 }
-ParentChildDesignModule.ɵfac = function ParentChildDesignModule_Factory(t) { return new (t || ParentChildDesignModule)(); };
-ParentChildDesignModule.ɵmod = /*@__PURE__*/ i0.ɵɵdefineNgModule({ type: ParentChildDesignModule });
-ParentChildDesignModule.ɵinj = /*@__PURE__*/ i0.ɵɵdefineInjector({ imports: [CommonModule] });
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(ParentChildDesignModule, [{
-        type: NgModule,
-        args: [{
-                imports: [
-                    CommonModule,
-                ],
-                declarations: EXAMPLES,
-                exports: EXAMPLES,
-            }]
-    }], null, null); })();
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(ParentChildDesignModule, { declarations: [SolutionOneExample,
+ParentChildDesignModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: ParentChildDesignModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
+ParentChildDesignModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "14.0.1", ngImport: i0, type: ParentChildDesignModule, declarations: [SolutionOneExample,
         SolutionTwoExample,
-        SolutionThreeExample], imports: [CommonModule], exports: [SolutionOneExample,
+        SolutionThreeExample], imports: [CommonModule,
+        SolutionOneRoutingModule], exports: [SolutionOneExample,
         SolutionTwoExample,
-        SolutionThreeExample] }); })();
+        SolutionThreeExample] });
+ParentChildDesignModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: ParentChildDesignModule, imports: [CommonModule,
+        SolutionOneRoutingModule] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: ParentChildDesignModule, decorators: [{
+            type: NgModule,
+            args: [{
+                    imports: [
+                        CommonModule,
+                        SolutionOneRoutingModule
+                    ],
+                    declarations: EXAMPLES,
+                    exports: EXAMPLES,
+                }]
+        }] });
 
 /**
  * @title Feature A
@@ -141,37 +162,32 @@ class FeatureAExample {
     ngOnInit() {
     }
 }
-FeatureAExample.ɵfac = function FeatureAExample_Factory(t) { return new (t || FeatureAExample)(); };
-FeatureAExample.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: FeatureAExample, selectors: [["tmdjr-feature-a"]], decls: 2, vars: 0, template: function FeatureAExample_Template(rf, ctx) { if (rf & 1) {
-        i0.ɵɵelementStart(0, "p");
-        i0.ɵɵtext(1, "feature-a works!");
-        i0.ɵɵelementEnd();
-    } } });
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(FeatureAExample, [{
-        type: Component,
-        args: [{ selector: 'tmdjr-feature-a', template: "<p>feature-a works!</p>\n" }]
-    }], function () { return []; }, null); })();
+FeatureAExample.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: FeatureAExample, deps: [], target: i0.ɵɵFactoryTarget.Component });
+FeatureAExample.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.0.1", type: FeatureAExample, selector: "tmdjr-feature-a", ngImport: i0, template: "<p>feature-a works!</p>\n", styles: [""] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: FeatureAExample, decorators: [{
+            type: Component,
+            args: [{ selector: 'tmdjr-feature-a', template: "<p>feature-a works!</p>\n" }]
+        }], ctorParameters: function () { return []; } });
 
 class FeatureAModule {
 }
-FeatureAModule.ɵfac = function FeatureAModule_Factory(t) { return new (t || FeatureAModule)(); };
-FeatureAModule.ɵmod = /*@__PURE__*/ i0.ɵɵdefineNgModule({ type: FeatureAModule });
-FeatureAModule.ɵinj = /*@__PURE__*/ i0.ɵɵdefineInjector({ imports: [CommonModule] });
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(FeatureAModule, [{
-        type: NgModule,
-        args: [{
-                declarations: [
-                    FeatureAExample
-                ],
-                imports: [
-                    CommonModule
-                ],
-                exports: [
-                    FeatureAExample
-                ]
-            }]
-    }], null, null); })();
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(FeatureAModule, { declarations: [FeatureAExample], imports: [CommonModule], exports: [FeatureAExample] }); })();
+FeatureAModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: FeatureAModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
+FeatureAModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "14.0.1", ngImport: i0, type: FeatureAModule, declarations: [FeatureAExample], imports: [CommonModule], exports: [FeatureAExample] });
+FeatureAModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: FeatureAModule, imports: [CommonModule] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: FeatureAModule, decorators: [{
+            type: NgModule,
+            args: [{
+                    declarations: [
+                        FeatureAExample
+                    ],
+                    imports: [
+                        CommonModule
+                    ],
+                    exports: [
+                        FeatureAExample
+                    ]
+                }]
+        }] });
 
 /**
  ******************************************************************************

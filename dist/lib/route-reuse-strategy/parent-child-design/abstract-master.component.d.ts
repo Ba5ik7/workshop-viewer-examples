@@ -9,4 +9,3 @@ export declare abstract class AbstractMasterComponent implements OnInit, OnDestr
     static ɵfac: i0.ɵɵFactoryDeclaration<AbstractMasterComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<AbstractMasterComponent, "ng-component", never, {}, {}, never, never, false>;
 }
-//# sourceMappingURL=abstract-master.component.d.ts.map
