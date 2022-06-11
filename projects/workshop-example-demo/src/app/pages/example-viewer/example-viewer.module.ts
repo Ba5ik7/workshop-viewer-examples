@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ExampleViewerRoutingModule } from './example-viewer-routing.module';
 import { ExampleViewerComponent } from './example-viewer.component';
+import { ExampleComponent } from './example/example.component';
 
 
 @NgModule({
   declarations: [
-    ExampleViewerComponent
+    ExampleViewerComponent,
+    ExampleComponent
   ],
   imports: [
-    CommonModule,
-    ExampleViewerRoutingModule
+    CommonModule
   ]
 })
 export class ExampleViewerModule { }

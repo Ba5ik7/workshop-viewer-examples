@@ -7,7 +7,7 @@ import { EXAMPLE_COMPONENTS } from '@tmdjr/workshop-examples/src/example-module'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'workshop-example-demo';
+  title = 'Workshop Example Demo';
 
   exampleComponents = EXAMPLE_COMPONENTS;
 
