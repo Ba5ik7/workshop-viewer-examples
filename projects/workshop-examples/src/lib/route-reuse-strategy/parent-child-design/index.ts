@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { SolutionOneExample } from './solution-one/solution-one-example';
 import { SolutionTwoExample } from './solution-two/solution-two-example';
 import { SolutionThreeExample } from './solution-three/solution-three-example';
-import { SolutionOneRoutingModule } from './solution-one-routing.module';
+import { ParentChildDesignRoutingModule } from './parent-child-design-routing.module';
 
 export {
   SolutionOneExample,
@@ -21,7 +21,7 @@ const EXAMPLES = [
 @NgModule({
   imports: [
     CommonModule,
-    SolutionOneRoutingModule
+    ParentChildDesignRoutingModule
   ],
   declarations: EXAMPLES,
   exports: EXAMPLES,

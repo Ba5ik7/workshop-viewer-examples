@@ -40,10 +40,10 @@ class SolutionOneExample extends AbstractMasterComponent {
     }
 }
 SolutionOneExample.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionOneExample, deps: [], target: i0.ɵɵFactoryTarget.Component });
-SolutionOneExample.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.0.1", type: SolutionOneExample, selector: "tmdjr-solution-one", usesInheritance: true, ngImport: i0, template: "<div class=\"solution-parent\">\n  <h2>{{displayName}}: <i>Parent</i></h2>\n  <div class=\"nav\"> \n     <ng-container *ngFor=\"let random of randoms\"> \n        <div class=\"nav-item\" [routerLink]=\"['/parent', { outlets: { 'parent-child-design-details-outlet': [ displayName, random] } }]\">\n          Go to {{random}}\n        </div>\n     </ng-container> \n  </div>\n  \n  <router-outlet name=\"parent-child-design-details-outlet\"></router-outlet>\n</div>", styles: [".solution-parent{display:block;border:1px solid #066e98;padding:10px;margin-bottom:10px}.solution-parent .nav{display:flex;flex-direction:row;gap:10px;margin-bottom:10px}.solution-parent .nav .nav-item{background-color:#000;color:#fff;padding:5px 10px;cursor:pointer}\n"], dependencies: [{ kind: "directive", type: i1.NgForOf, selector: "[ngFor][ngForOf]", inputs: ["ngForOf", "ngForTrackBy", "ngForTemplate"] }, { kind: "directive", type: i1$1.RouterOutlet, selector: "router-outlet", outputs: ["activate", "deactivate", "attach", "detach"], exportAs: ["outlet"] }, { kind: "directive", type: i1$1.RouterLink, selector: ":not(a):not(area)[routerLink]", inputs: ["queryParams", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", "relativeTo", "routerLink"] }] });
+SolutionOneExample.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.0.1", type: SolutionOneExample, selector: "tmdjr-solution-one", usesInheritance: true, ngImport: i0, template: "<div class=\"solution-parent\">\n  <h2>{{displayName}}: <i>Parent Test 1</i></h2>\n  <div class=\"nav\"> \n     <ng-container *ngFor=\"let random of randoms\"> \n        <div class=\"nav-item\" [routerLink]=\"['', { outlets: { 'parent-child-design-details-outlet': [ displayName, random] } }]\">\n          Go to {{random}}\n        </div>\n     </ng-container> \n  </div>\n  \n  <router-outlet name=\"parent-child-design-details-outlet\"></router-outlet>\n</div>", styles: [".solution-parent{display:block;border:1px solid #066e98;padding:10px;margin-bottom:10px}.solution-parent .nav{display:flex;flex-direction:row;gap:10px;margin-bottom:10px}.solution-parent .nav .nav-item{background-color:#000;color:#fff;padding:5px 10px;cursor:pointer}\n"], dependencies: [{ kind: "directive", type: i1.NgForOf, selector: "[ngFor][ngForOf]", inputs: ["ngForOf", "ngForTrackBy", "ngForTemplate"] }, { kind: "directive", type: i1$1.RouterOutlet, selector: "router-outlet", outputs: ["activate", "deactivate", "attach", "detach"], exportAs: ["outlet"] }, { kind: "directive", type: i1$1.RouterLink, selector: ":not(a):not(area)[routerLink]", inputs: ["queryParams", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", "relativeTo", "routerLink"] }] });
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionOneExample, decorators: [{
             type: Component,
-            args: [{ selector: 'tmdjr-solution-one', template: "<div class=\"solution-parent\">\n  <h2>{{displayName}}: <i>Parent</i></h2>\n  <div class=\"nav\"> \n     <ng-container *ngFor=\"let random of randoms\"> \n        <div class=\"nav-item\" [routerLink]=\"['/parent', { outlets: { 'parent-child-design-details-outlet': [ displayName, random] } }]\">\n          Go to {{random}}\n        </div>\n     </ng-container> \n  </div>\n  \n  <router-outlet name=\"parent-child-design-details-outlet\"></router-outlet>\n</div>", styles: [".solution-parent{display:block;border:1px solid #066e98;padding:10px;margin-bottom:10px}.solution-parent .nav{display:flex;flex-direction:row;gap:10px;margin-bottom:10px}.solution-parent .nav .nav-item{background-color:#000;color:#fff;padding:5px 10px;cursor:pointer}\n"] }]
+            args: [{ selector: 'tmdjr-solution-one', template: "<div class=\"solution-parent\">\n  <h2>{{displayName}}: <i>Parent Test 1</i></h2>\n  <div class=\"nav\"> \n     <ng-container *ngFor=\"let random of randoms\"> \n        <div class=\"nav-item\" [routerLink]=\"['', { outlets: { 'parent-child-design-details-outlet': [ displayName, random] } }]\">\n          Go to {{random}}\n        </div>\n     </ng-container> \n  </div>\n  \n  <router-outlet name=\"parent-child-design-details-outlet\"></router-outlet>\n</div>", styles: [".solution-parent{display:block;border:1px solid #066e98;padding:10px;margin-bottom:10px}.solution-parent .nav{display:flex;flex-direction:row;gap:10px;margin-bottom:10px}.solution-parent .nav .nav-item{background-color:#000;color:#fff;padding:5px 10px;cursor:pointer}\n"] }]
         }], ctorParameters: function () { return []; } });
 
 /**
@@ -101,7 +101,7 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImpor
 
 const routes = [
     {
-        path: 'parent',
+        path: '',
         component: SolutionOneExample,
         children: [
             {
@@ -113,12 +113,12 @@ const routes = [
         ]
     }
 ];
-class SolutionOneRoutingModule {
+class ParentChildDesignRoutingModule {
 }
-SolutionOneRoutingModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionOneRoutingModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
-SolutionOneRoutingModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "14.0.1", ngImport: i0, type: SolutionOneRoutingModule, imports: [i1$1.RouterModule], exports: [RouterModule] });
-SolutionOneRoutingModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionOneRoutingModule, imports: [RouterModule.forChild(routes), RouterModule] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionOneRoutingModule, decorators: [{
+ParentChildDesignRoutingModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: ParentChildDesignRoutingModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
+ParentChildDesignRoutingModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "14.0.1", ngImport: i0, type: ParentChildDesignRoutingModule, imports: [i1$1.RouterModule], exports: [RouterModule] });
+ParentChildDesignRoutingModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: ParentChildDesignRoutingModule, imports: [RouterModule.forChild(routes), RouterModule] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: ParentChildDesignRoutingModule, decorators: [{
             type: NgModule,
             args: [{
                     imports: [RouterModule.forChild(routes)],
@@ -137,17 +137,17 @@ ParentChildDesignModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", 
 ParentChildDesignModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "14.0.1", ngImport: i0, type: ParentChildDesignModule, declarations: [SolutionOneExample,
         SolutionTwoExample,
         SolutionThreeExample], imports: [CommonModule,
-        SolutionOneRoutingModule], exports: [SolutionOneExample,
+        ParentChildDesignRoutingModule], exports: [SolutionOneExample,
         SolutionTwoExample,
         SolutionThreeExample] });
 ParentChildDesignModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: ParentChildDesignModule, imports: [CommonModule,
-        SolutionOneRoutingModule] });
+        ParentChildDesignRoutingModule] });
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: ParentChildDesignModule, decorators: [{
             type: NgModule,
             args: [{
                     imports: [
                         CommonModule,
-                        SolutionOneRoutingModule
+                        ParentChildDesignRoutingModule
                     ],
                     declarations: EXAMPLES,
                     exports: EXAMPLES,

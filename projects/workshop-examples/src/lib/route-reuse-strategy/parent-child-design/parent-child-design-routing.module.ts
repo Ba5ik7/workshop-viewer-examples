@@ -6,7 +6,7 @@ import { DetailsComponent } from './details/details.component';
 
 const routes: Routes = [
   {
-    path: 'parent', 
+    path: '', 
     component: SolutionOneExample,
     children: [
       {
@@ -23,4 +23,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class SolutionOneRoutingModule { }
+export class ParentChildDesignRoutingModule { }
