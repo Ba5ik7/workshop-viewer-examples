@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { AbstractMasterComponent } from '../abstract-master.component';
 
 /**
  * @title RouteReuseStrategy - Parent Child Design - Solution One
@@ -8,11 +9,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './solution-one-example.html',
   styleUrls: ['./solution-one-example.css']
 })
-export class SolutionOneExample implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class SolutionOneExample extends AbstractMasterComponent {
+  displayName: string = 'Solution One';
+  constructor() { super(); }
 }

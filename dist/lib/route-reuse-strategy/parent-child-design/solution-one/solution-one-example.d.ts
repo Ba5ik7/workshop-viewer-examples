@@ -1,11 +1,11 @@
-import { OnInit } from '@angular/core';
+import { AbstractMasterComponent } from '../abstract-master.component';
 import * as i0 from "@angular/core";
 /**
  * @title RouteReuseStrategy - Parent Child Design - Solution One
  */
-export declare class SolutionOneExample implements OnInit {
+export declare class SolutionOneExample extends AbstractMasterComponent {
+    displayName: string;
     constructor();
-    ngOnInit(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<SolutionOneExample, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<SolutionOneExample, "tmdjr-solution-one", never, {}, {}, never, never, false>;
 }
