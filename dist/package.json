@@ -1,6 +1,6 @@
 {
   "name": "workshop-examples",
-  "version": "0.0.0-watch+1654910557734",
+  "version": "0.0.0-watch+1654910818583",
   "peerDependencies": {
     "@angular/common": "^14.0.1",
     "@angular/core": "^14.0.1"
