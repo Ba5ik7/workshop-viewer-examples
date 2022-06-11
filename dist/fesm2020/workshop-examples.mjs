@@ -10,16 +10,12 @@ class SolutionOneExample {
     ngOnInit() {
     }
 }
-SolutionOneExample.ɵfac = function SolutionOneExample_Factory(t) { return new (t || SolutionOneExample)(); };
-SolutionOneExample.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: SolutionOneExample, selectors: [["tmdjr-solution-one"]], decls: 2, vars: 0, template: function SolutionOneExample_Template(rf, ctx) { if (rf & 1) {
-        i0.ɵɵelementStart(0, "p");
-        i0.ɵɵtext(1, "solution-one works! Kelly");
-        i0.ɵɵelementEnd();
-    } } });
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(SolutionOneExample, [{
-        type: Component,
-        args: [{ selector: 'tmdjr-solution-one', template: "<p>solution-one works! Kelly</p>\n" }]
-    }], function () { return []; }, null); })();
+SolutionOneExample.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionOneExample, deps: [], target: i0.ɵɵFactoryTarget.Component });
+SolutionOneExample.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.0.1", type: SolutionOneExample, selector: "tmdjr-solution-one", ngImport: i0, template: "<p>solution-one works! Kelly</p>\n", styles: [""] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionOneExample, decorators: [{
+            type: Component,
+            args: [{ selector: 'tmdjr-solution-one', template: "<p>solution-one works! Kelly</p>\n" }]
+        }], ctorParameters: function () { return []; } });
 
 /**
  * @title RouteReuseStrategy - Parent Child Design - Solution Two
@@ -29,16 +25,12 @@ class SolutionTwoExample {
     ngOnInit() {
     }
 }
-SolutionTwoExample.ɵfac = function SolutionTwoExample_Factory(t) { return new (t || SolutionTwoExample)(); };
-SolutionTwoExample.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: SolutionTwoExample, selectors: [["tmdjr-solution-two"]], decls: 2, vars: 0, template: function SolutionTwoExample_Template(rf, ctx) { if (rf & 1) {
-        i0.ɵɵelementStart(0, "p");
-        i0.ɵɵtext(1, "solution-two works!");
-        i0.ɵɵelementEnd();
-    } } });
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(SolutionTwoExample, [{
-        type: Component,
-        args: [{ selector: 'tmdjr-solution-two', template: "<p>solution-two works!</p>\n" }]
-    }], function () { return []; }, null); })();
+SolutionTwoExample.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionTwoExample, deps: [], target: i0.ɵɵFactoryTarget.Component });
+SolutionTwoExample.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.0.1", type: SolutionTwoExample, selector: "tmdjr-solution-two", ngImport: i0, template: "<p>solution-two works!</p>\n", styles: [""] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionTwoExample, decorators: [{
+            type: Component,
+            args: [{ selector: 'tmdjr-solution-two', template: "<p>solution-two works!</p>\n" }]
+        }], ctorParameters: function () { return []; } });
 
 /**
  * @title RouteReuseStrategy - Parent Child Design - Solution Three
@@ -48,16 +40,12 @@ class SolutionThreeExample {
     ngOnInit() {
     }
 }
-SolutionThreeExample.ɵfac = function SolutionThreeExample_Factory(t) { return new (t || SolutionThreeExample)(); };
-SolutionThreeExample.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: SolutionThreeExample, selectors: [["tmdjr-solution-three"]], decls: 2, vars: 0, template: function SolutionThreeExample_Template(rf, ctx) { if (rf & 1) {
-        i0.ɵɵelementStart(0, "p");
-        i0.ɵɵtext(1, "solution-three works!");
-        i0.ɵɵelementEnd();
-    } } });
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(SolutionThreeExample, [{
-        type: Component,
-        args: [{ selector: 'tmdjr-solution-three', template: "<p>solution-three works!</p>\n" }]
-    }], function () { return []; }, null); })();
+SolutionThreeExample.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionThreeExample, deps: [], target: i0.ɵɵFactoryTarget.Component });
+SolutionThreeExample.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.0.1", type: SolutionThreeExample, selector: "tmdjr-solution-three", ngImport: i0, template: "<p>solution-three works!</p>\n", styles: [""] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: SolutionThreeExample, decorators: [{
+            type: Component,
+            args: [{ selector: 'tmdjr-solution-three', template: "<p>solution-three works!</p>\n" }]
+        }], ctorParameters: function () { return []; } });
 
 const EXAMPLES = [
     SolutionOneExample,
@@ -66,24 +54,23 @@ const EXAMPLES = [
 ];
 class ParentChildDesignModule {
 }
-ParentChildDesignModule.ɵfac = function ParentChildDesignModule_Factory(t) { return new (t || ParentChildDesignModule)(); };
-ParentChildDesignModule.ɵmod = /*@__PURE__*/ i0.ɵɵdefineNgModule({ type: ParentChildDesignModule });
-ParentChildDesignModule.ɵinj = /*@__PURE__*/ i0.ɵɵdefineInjector({ imports: [CommonModule] });
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(ParentChildDesignModule, [{
-        type: NgModule,
-        args: [{
-                imports: [
-                    CommonModule,
-                ],
-                declarations: EXAMPLES,
-                exports: EXAMPLES,
-            }]
-    }], null, null); })();
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(ParentChildDesignModule, { declarations: [SolutionOneExample,
+ParentChildDesignModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: ParentChildDesignModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
+ParentChildDesignModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "14.0.1", ngImport: i0, type: ParentChildDesignModule, declarations: [SolutionOneExample,
         SolutionTwoExample,
         SolutionThreeExample], imports: [CommonModule], exports: [SolutionOneExample,
         SolutionTwoExample,
-        SolutionThreeExample] }); })();
+        SolutionThreeExample] });
+ParentChildDesignModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: ParentChildDesignModule, imports: [CommonModule] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: ParentChildDesignModule, decorators: [{
+            type: NgModule,
+            args: [{
+                    imports: [
+                        CommonModule,
+                    ],
+                    declarations: EXAMPLES,
+                    exports: EXAMPLES,
+                }]
+        }] });
 
 /**
  * @title Feature A
@@ -93,37 +80,32 @@ class FeatureAExample {
     ngOnInit() {
     }
 }
-FeatureAExample.ɵfac = function FeatureAExample_Factory(t) { return new (t || FeatureAExample)(); };
-FeatureAExample.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: FeatureAExample, selectors: [["tmdjr-feature-a"]], decls: 2, vars: 0, template: function FeatureAExample_Template(rf, ctx) { if (rf & 1) {
-        i0.ɵɵelementStart(0, "p");
-        i0.ɵɵtext(1, "feature-a works!");
-        i0.ɵɵelementEnd();
-    } } });
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(FeatureAExample, [{
-        type: Component,
-        args: [{ selector: 'tmdjr-feature-a', template: "<p>feature-a works!</p>\n" }]
-    }], function () { return []; }, null); })();
+FeatureAExample.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: FeatureAExample, deps: [], target: i0.ɵɵFactoryTarget.Component });
+FeatureAExample.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.0.1", type: FeatureAExample, selector: "tmdjr-feature-a", ngImport: i0, template: "<p>feature-a works!</p>\n", styles: [""] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: FeatureAExample, decorators: [{
+            type: Component,
+            args: [{ selector: 'tmdjr-feature-a', template: "<p>feature-a works!</p>\n" }]
+        }], ctorParameters: function () { return []; } });
 
 class FeatureAModule {
 }
-FeatureAModule.ɵfac = function FeatureAModule_Factory(t) { return new (t || FeatureAModule)(); };
-FeatureAModule.ɵmod = /*@__PURE__*/ i0.ɵɵdefineNgModule({ type: FeatureAModule });
-FeatureAModule.ɵinj = /*@__PURE__*/ i0.ɵɵdefineInjector({ imports: [CommonModule] });
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(FeatureAModule, [{
-        type: NgModule,
-        args: [{
-                declarations: [
-                    FeatureAExample
-                ],
-                imports: [
-                    CommonModule
-                ],
-                exports: [
-                    FeatureAExample
-                ]
-            }]
-    }], null, null); })();
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(FeatureAModule, { declarations: [FeatureAExample], imports: [CommonModule], exports: [FeatureAExample] }); })();
+FeatureAModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: FeatureAModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
+FeatureAModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "14.0.1", ngImport: i0, type: FeatureAModule, declarations: [FeatureAExample], imports: [CommonModule], exports: [FeatureAExample] });
+FeatureAModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: FeatureAModule, imports: [CommonModule] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.0.1", ngImport: i0, type: FeatureAModule, decorators: [{
+            type: NgModule,
+            args: [{
+                    declarations: [
+                        FeatureAExample
+                    ],
+                    imports: [
+                        CommonModule
+                    ],
+                    exports: [
+                        FeatureAExample
+                    ]
+                }]
+        }] });
 
 /**
  ******************************************************************************
