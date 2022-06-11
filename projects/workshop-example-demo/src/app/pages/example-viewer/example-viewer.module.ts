@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ExampleViewerComponent } from './example-viewer.component';
 import { ExampleComponent } from './example/example.component';
 import { ExampleViewerRoutingModule } from './example-viewer-routing.module';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { ExampleViewerRoutingModule } from './example-viewer-routing.module';
   ],
   imports: [
     CommonModule,
+    RouterModule,
     ExampleViewerRoutingModule
   ]
 })
