@@ -6,8 +6,21 @@ import { Component, NgModule } from '@angular/core';
  * @title RouteReuseStrategy - Parent Child Design - Solution One
  */
 class SolutionOneExample {
-    constructor() { }
     ngOnInit() {
+        this.randoms = [];
+        // const numberOfLinks = 5;
+        // for (let i = 0; i < numberOfLinks; i++) {
+        // 	this.randoms.push(this.getRandom(100));
+        // }
+        // Have we taken declarative programming to far?
+        Array.from({ length: 5 }, () => this.randoms.push(this.getRandom(100)));
+        console.log(`OnInit ${this.displayName} Parent`);
+    }
+    getRandom(max) {
+        return Math.floor(Math.random() * max);
+    }
+    ngOnDestroy() {
+        console.log(`OnDestroy ${this.displayName} Parent`);
     }
 }
 SolutionOneExample.ɵfac = function SolutionOneExample_Factory(t) { return new (t || SolutionOneExample)(); };
@@ -19,7 +32,7 @@ SolutionOneExample.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: Solution
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(SolutionOneExample, [{
         type: Component,
         args: [{ selector: 'tmdjr-solution-one', template: "<p>solution-one works! Kelly</p>\n" }]
-    }], function () { return []; }, null); })();
+    }], null, null); })();
 
 /**
  * @title RouteReuseStrategy - Parent Child Design - Solution Two
