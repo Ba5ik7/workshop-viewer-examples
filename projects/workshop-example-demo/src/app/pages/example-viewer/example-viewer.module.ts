@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ExampleViewerComponent } from './example-viewer.component';
-import { ExampleComponent } from './example/example.component';
 import { ExampleViewerRoutingModule } from './example-viewer-routing.module';
-import { RouterModule } from '@angular/router';
+import { ExampleViewerComponent } from './example-viewer.component';
+import { LiveExampleComponent } from './live-example/live-example.component';
 
 
 @NgModule({
   declarations: [
     ExampleViewerComponent,
-    ExampleComponent
+    LiveExampleComponent
   ],
   imports: [
     CommonModule,
-    RouterModule,
     ExampleViewerRoutingModule
   ]
 })

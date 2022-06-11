@@ -11,11 +11,11 @@ import { EXAMPLE_COMPONENTS, LiveExample } from '@tmdjr/workshop-examples/src/ex
 export type Views = 'snippet' | 'full' | 'demo';
 
 @Component({
-  selector: 'app-example',
-  templateUrl: './example.component.html',
-  styleUrls: ['./example.component.scss']
+  selector: 'live-example',
+  templateUrl: './live-example.component.html',
+  styleUrls: ['./live-example.component.scss']
 })
-export class ExampleComponent {
+export class LiveExampleComponent {
 
   /** Module factory that declares the example component. */
   exampleModuleFactory: ɵNgModuleFactory<any> | null = null;
@@ -25,18 +25,6 @@ export class ExampleComponent {
 
   /** Data for the currently selected example. */
   exampleData: LiveExample | null = null;
-
-  /** Whether to show toggle for compact view. */
-  @Input() showCompactToggle = false;
-
-  /** View of the example component. */
-  @Input() view: Views | undefined;
-
-  /** Name of file to display in compact view. */
-  @Input() file?: string;
-
-  /** Range of lines of the source code to display in compact view. */
-  @Input() region?: string;
 
   /** String key of the currently displayed example. */
   @HostBinding('attr.id')
@@ -91,5 +79,4 @@ export class ExampleComponent {
       }
     }
   }
-
 }

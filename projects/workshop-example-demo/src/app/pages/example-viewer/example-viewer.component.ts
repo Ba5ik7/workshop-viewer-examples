@@ -1,31 +1,40 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-// import { ActivatedRoute } from '@angular/router';
-import { distinct, Subject, takeUntil } from 'rxjs';
+import { ComponentPortal, DomPortalOutlet } from '@angular/cdk/portal';
+import { ApplicationRef, Component, ComponentFactoryResolver, ElementRef, Injector, OnDestroy, ViewContainerRef } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Subject, takeUntil } from 'rxjs';
+import { LiveExampleComponent } from './live-example/live-example.component';
 
 @Component({
   selector: 'app-example-viewer',
-  templateUrl: './example-viewer.component.html',
-  styleUrls: ['./example-viewer.component.scss']
+  template: ''
 })
 export class ExampleViewerComponent implements OnDestroy {
 
   destory: Subject<boolean> = new Subject();
-  // categoryId!: string;
+  section!: string;
 
-  // constructor(activatedRoute: ActivatedRoute ) {
-  //   console.log('HEllo');
-    
-  //   activatedRoute.params
-  //   .pipe(takeUntil(this.destory), distinct())
-  //   .subscribe(params => {
-  //     console.log(params);
-      
-  //     this.categoryId = params['example']
-  //   });
-  // }
+  constructor(
+    activatedRoute: ActivatedRoute,
+    private appRef: ApplicationRef,
+    private injector: Injector,
+    private viewContainerRef: ViewContainerRef,
+    private componentFactoryResolver: ComponentFactoryResolver,
+    private elementRef: ElementRef
+  ) {    
+    activatedRoute.params
+      .pipe(takeUntil(this.destory))
+      .subscribe((data) => this.loadLiveExamples(data['section']));
+  }
+
+  loadLiveExamples(componentName: string): void {
+      const portalHost = new DomPortalOutlet(this.elementRef.nativeElement, this.componentFactoryResolver, this.appRef, this.injector);
+      const examplePortal = new ComponentPortal(LiveExampleComponent, this.viewContainerRef);
+      const exampleViewer = portalHost.attach(examplePortal);
+      const exampleViewerComponent = exampleViewer.instance as LiveExampleComponent;
+      exampleViewerComponent.example = componentName;
+  }
 
   ngOnDestroy(): void {
     this.destory.next(true);
   }
-
 }

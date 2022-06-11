@@ -12,4 +12,3 @@ export declare class ParentChildDesignModule {
     static ɵmod: i0.ɵɵNgModuleDeclaration<ParentChildDesignModule, [typeof i1.SolutionOneExample, typeof i2.SolutionTwoExample, typeof i3.SolutionThreeExample], [typeof i4.CommonModule], [typeof i1.SolutionOneExample, typeof i2.SolutionTwoExample, typeof i3.SolutionThreeExample]>;
     static ɵinj: i0.ɵɵInjectorDeclaration<ParentChildDesignModule>;
 }
-//# sourceMappingURL=index.d.ts.map

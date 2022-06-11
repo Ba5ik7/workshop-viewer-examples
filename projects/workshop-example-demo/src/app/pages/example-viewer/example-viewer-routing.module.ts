@@ -4,13 +4,13 @@ import { ExampleViewerComponent } from './example-viewer.component';
 
 const routes: Routes = [
   {
-    path: '/:section',
+    path: ':section',
+    data: { alwaysRefresh: true },
     component: ExampleViewerComponent
-  }
-];
+  }];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class ExampleViewerRoutingModule { }

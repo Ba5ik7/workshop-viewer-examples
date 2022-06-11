@@ -9,4 +9,3 @@ export declare class FeatureAExample implements OnInit {
     static ɵfac: i0.ɵɵFactoryDeclaration<FeatureAExample, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<FeatureAExample, "tmdjr-feature-a", never, {}, {}, never, never, false>;
 }
-//# sourceMappingURL=feature-a-example.d.ts.map
