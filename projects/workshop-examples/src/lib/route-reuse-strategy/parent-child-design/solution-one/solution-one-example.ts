@@ -1,5 +1,7 @@
+import { ComponentPortal } from '@angular/cdk/portal';
 import { Component } from '@angular/core';
 import { AbstractMasterComponent } from '../abstract-master.component';
+import { DetailsComponent } from '../details/details.component';
 
 /**
  * @title RouteReuseStrategy - Parent Child Design - Solution One
@@ -12,11 +14,19 @@ import { AbstractMasterComponent } from '../abstract-master.component';
 export class SolutionOneExample extends AbstractMasterComponent {
   displayName: string = 'Solution One';
   routeId!: any;
+  sharedDetailsPortal!: ComponentPortal<DetailsComponent>;
   constructor() { super(); }
+
+  override _ngOnInit(): void {
+    this.sharedDetailsPortal = new ComponentPortal(DetailsComponent);
+  }
 
   emuRouteChanges(random: number) {
 		console.log(random);
-    this.routeId = random;
+    // this.sharedDetailsPortal.component.routeId = random;
 	}
+
+  ngAfterViewInit() {
+  }
 
 }

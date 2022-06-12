@@ -7,5 +7,6 @@
         </div>
      </ng-container>
   </div>
-  <shared-details [routeId]="routeId" [displayName]="displayName"></shared-details>
+  <!-- <shared-details [routeId]="routeId" [displayName]="displayName"></shared-details> -->
+  <ng-template [cdkPortalOutlet]="sharedDetailsPortal"></ng-template>
 </div>

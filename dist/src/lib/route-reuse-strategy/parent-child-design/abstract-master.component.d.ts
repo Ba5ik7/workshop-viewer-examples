@@ -4,6 +4,7 @@ export declare abstract class AbstractMasterComponent implements OnInit, OnDestr
     randoms: number[];
     abstract displayName: string;
     ngOnInit(): void;
+    _ngOnInit(): void;
     getRandom(max: number): number;
     ngOnDestroy(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<AbstractMasterComponent, never>;

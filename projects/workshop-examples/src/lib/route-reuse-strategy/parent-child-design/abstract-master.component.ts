@@ -7,14 +7,12 @@ export abstract class AbstractMasterComponent implements OnInit, OnDestroy {
 
 	ngOnInit(): void {
 		this.randoms = [];
-		// const numberOfLinks = 5;
-		// for (let i = 0; i < numberOfLinks; i++) {
-		// 	this.randoms.push(this.getRandom(100));
-		// }
-		// Have we taken declarative programming to far?
 		Array.from({ length: 5 }, () => this.randoms.push(this.getRandom(100)));
 		console.log(`OnInit ${this.displayName} Parent`);
+		this._ngOnInit();
 	}
+
+	_ngOnInit() {}
 
 	getRandom(max: number): number {
 		return Math.floor(Math.random() * max);
@@ -24,3 +22,4 @@ export abstract class AbstractMasterComponent implements OnInit, OnDestroy {
 		console.log(`OnDestroy ${this.displayName} Parent`);
 	}
 }
+

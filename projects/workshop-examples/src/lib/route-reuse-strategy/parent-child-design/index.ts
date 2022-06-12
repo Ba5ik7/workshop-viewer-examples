@@ -1,4 +1,5 @@
 import { CommonModule } from '@angular/common';
+import { PortalModule } from '@angular/cdk/portal';
 import { NgModule } from '@angular/core';
 
 import { SolutionOneExample } from './solution-one/solution-one-example';
@@ -20,7 +21,8 @@ const EXAMPLES = [
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    PortalModule
   ],
   declarations: [...EXAMPLES, DetailsComponent],
   exports: EXAMPLES,
