@@ -2,11 +2,9 @@
   <h2>{{displayName}}: <i>Parent Test 1</i></h2>
   <div class="nav"> 
      <ng-container *ngFor="let random of randoms"> 
-        <div class="nav-item" [routerLink]="['', { outlets: { 'parent-child-design-details-outlet': [ displayName, random] } }]">
+        <div class="nav-item">
           Go to {{random}}
         </div>
      </ng-container> 
   </div>
-  
-  <router-outlet name="parent-child-design-details-outlet"></router-outlet>
 </div>

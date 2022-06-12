@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { SolutionOneExample } from './solution-one/solution-one-example';
 import { SolutionTwoExample } from './solution-two/solution-two-example';
 import { SolutionThreeExample } from './solution-three/solution-three-example';
-import { ParentChildDesignRoutingModule } from './parent-child-design-routing.module';
 
 export {
   SolutionOneExample,
@@ -20,8 +19,7 @@ const EXAMPLES = [
 
 @NgModule({
   imports: [
-    CommonModule,
-    ParentChildDesignRoutingModule
+    CommonModule
   ],
   declarations: EXAMPLES,
   exports: EXAMPLES,

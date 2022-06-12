@@ -5,3 +5,4 @@ export declare class ParentChildDesignRoutingModule {
     static ɵmod: i0.ɵɵNgModuleDeclaration<ParentChildDesignRoutingModule, never, [typeof i1.RouterModule], [typeof i1.RouterModule]>;
     static ɵinj: i0.ɵɵInjectorDeclaration<ParentChildDesignRoutingModule>;
 }
+//# sourceMappingURL=parent-child-design-routing.module.d.ts.map

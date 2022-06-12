@@ -12,3 +12,4 @@ export declare class DetailsComponent implements OnInit, OnDestroy {
     static ɵfac: i0.ɵɵFactoryDeclaration<DetailsComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<DetailsComponent, "shared-details", never, {}, {}, never, never, false>;
 }
+//# sourceMappingURL=details.component.d.ts.map
