@@ -2,9 +2,10 @@
   <h2>{{displayName}}: <i>Parent Test 1</i></h2>
   <div class="nav"> 
      <ng-container *ngFor="let random of randoms"> 
-        <div class="nav-item">
+        <div class="nav-item" (click)="emuRouteChanges(random)">
           Go to {{random}}
         </div>
-     </ng-container> 
+     </ng-container>
   </div>
+  <shared-details [routeId]="routeId" [displayName]="displayName"></shared-details>
 </div>

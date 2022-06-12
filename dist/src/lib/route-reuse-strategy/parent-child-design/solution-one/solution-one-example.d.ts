@@ -5,7 +5,9 @@ import * as i0 from "@angular/core";
  */
 export declare class SolutionOneExample extends AbstractMasterComponent {
     displayName: string;
+    routeId: any;
     constructor();
+    emuRouteChanges(random: number): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<SolutionOneExample, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<SolutionOneExample, "tmdjr-solution-one", never, {}, {}, never, never, false>;
 }

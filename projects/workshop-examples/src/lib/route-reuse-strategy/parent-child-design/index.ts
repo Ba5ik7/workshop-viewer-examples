@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { SolutionOneExample } from './solution-one/solution-one-example';
 import { SolutionTwoExample } from './solution-two/solution-two-example';
 import { SolutionThreeExample } from './solution-three/solution-three-example';
+import { DetailsComponent } from './details/details.component';
 
 export {
   SolutionOneExample,
@@ -21,7 +22,7 @@ const EXAMPLES = [
   imports: [
     CommonModule
   ],
-  declarations: EXAMPLES,
+  declarations: [...EXAMPLES, DetailsComponent],
   exports: EXAMPLES,
 })
 export class ParentChildDesignModule {}

@@ -11,5 +11,12 @@ import { AbstractMasterComponent } from '../abstract-master.component';
 })
 export class SolutionOneExample extends AbstractMasterComponent {
   displayName: string = 'Solution One';
+  routeId!: any;
   constructor() { super(); }
+
+  emuRouteChanges(random: number) {
+		console.log(random);
+    this.routeId = random;
+	}
+
 }

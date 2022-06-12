@@ -1,5 +1,5 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+// import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'shared-details',
@@ -7,17 +7,19 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./details.component.scss']
 })
 export class DetailsComponent implements OnInit, OnDestroy {
-  public routeId!: any;
-  public displayName!: any;
-  public randomVal!: number;
+  @Input() routeId!: any;
+  @Input() displayName!: any;
+  randomVal!: number;
 
-  constructor(private route: ActivatedRoute) { }
+  // constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.route.params.subscribe(p => {
-      this.routeId = p['detailId'];
-      this.displayName = p['displayName'];
-    });
+    // this.route.params.subscribe(p => {
+    //   this.routeId = p['detailId'];
+    //   this.displayName = p['displayName'];
+    // });
+
+
     this.randomVal = Math.floor(Math.random() * 100);
     console.log(`OnInit ${this.displayName} Detail: ${this.routeId}`);
   }
